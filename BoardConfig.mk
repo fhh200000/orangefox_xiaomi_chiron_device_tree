@@ -54,7 +54,11 @@ BOARD_KERNEL_CMDLINE += androidboot.usbcontroller=a800000.dwc3
 BOARD_KERNEL_CMDLINE += androidboot.configfs=true
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
-TARGET_PREBUILT_KERNEL := device/xiaomi/chiron/prebuilt/Image.gz-dtb
+BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
+TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8998
+TARGET_KERNEL_CONFIG := chiron_defconfig
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
+export CROSS_COMPILE_ARM32="arm-linux-androideabi-"
 
 # Platform
 TARGET_BOARD_PLATFORM := msm8998

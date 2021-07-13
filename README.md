@@ -1,5 +1,5 @@
-# android_device_xiaomi_chiron
-Tree for building TWRP for Xiaomi MIX 2
+# orangefox_xiaomi_chiron_device_tree
+Tree for building Orange Fox for Xiaomi MIX 2
 
 ## To compile
 
@@ -7,7 +7,7 @@ export ALLOW_MISSING_DEPENDENCIES=true
 
 . build/envsetup.sh && lunch omni_chiron-eng
 
-mka adbd recoveryimage
+mka recoveryimage
 
 ## Device specifications
 
